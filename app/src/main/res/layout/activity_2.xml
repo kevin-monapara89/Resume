@@ -43,15 +43,14 @@
         android:layout_marginTop="10dp"
         android:hint="Enter Mobile Number" />
 
-
     <TextView
-        android:id="@+id/btnstart"
+        android:id="@+id/btnnext1"
         android:layout_width="150dp"
         android:layout_height="35dp"
         android:background="@drawable/btn"
         android:gravity="center"
         android:layout_marginTop="200dp"
-        android:marginBottom="100dp"
+        android:layout_marginBottom="100dp"
         android:text="Next"
         android:textColor="@color/white"
         android:textStyle="bold" />
