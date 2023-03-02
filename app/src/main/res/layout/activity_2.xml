@@ -11,46 +11,88 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_height="70dp"
         android:gravity="center"
         android:text="Pesonal Detail"
-        android:textColor="#2DBDF7"
+        android:textColor="@color/purple_700"
         android:textSize="20dp"
+        android:layout_marginBottom="20dp"
         android:textStyle="bold" />
 
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:hint="Enter Name" />
+        android:layout_margin="10dp"
+        android:background="@drawable/edt_text1">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="Enter Address" />
+        <EditText
+            android:id="@+id/edtname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:hint="Enter Name" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="Enter email" />
+    </LinearLayout>
 
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="Enter Mobile Number" />
+        android:layout_margin="10dp"
+        android:background="@drawable/edt_text1">
+
+        <EditText
+            android:id="@+id/edtaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:hint="Enter Address" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/edt_text1">
+
+        <EditText
+            android:id="@+id/edtemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:inputType="textEmailAddress"
+            android:hint="Enter Email" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/edt_text1">
+
+        <EditText
+            android:id="@+id/edtphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:inputType="phone"
+            android:hint="Phone No." />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/btnnext1"
-        android:layout_width="150dp"
-        android:layout_height="35dp"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="100dp"
         android:background="@drawable/btn"
         android:gravity="center"
-        android:layout_marginTop="200dp"
-        android:layout_marginBottom="100dp"
         android:text="Next"
         android:textColor="@color/white"
         android:textStyle="bold" />

@@ -1,23 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_margin="10dp"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".Activity2">
+    tools:context=".Activity4">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:gravity="center"
-        android:text="Work Experiance"
+        android:text="Education"
         android:textColor="@color/purple_700"
         android:textSize="20dp"
         android:layout_marginBottom="20dp"
         android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SSC Detail :"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:layout_gravity="left"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,12 +35,12 @@
         android:background="@drawable/edt_text1">
 
         <EditText
-            android:id="@+id/edtcompany"
+            android:id="@+id/edtsch1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@null"
-            android:hint="Company Name" />
+            android:hint="School Name" />
 
     </LinearLayout>
 
@@ -41,12 +51,12 @@
         android:background="@drawable/edt_text1">
 
         <EditText
-            android:id="@+id/edtexp"
+            android:id="@+id/edtgrade1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@null"
-            android:hint="Experiance" />
+            android:hint="Grade" />
 
     </LinearLayout>
 
@@ -57,40 +67,81 @@
         android:background="@drawable/edt_text1">
 
         <EditText
-            android:id="@+id/edtjob"
+            android:id="@+id/edtpy1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@null"
-            android:hint="Job Type" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@drawable/edt_text1">
-
-        <EditText
-            android:id="@+id/edtposs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@null"
-            android:hint="Possition" />
+            android:hint="Passing Year" />
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/btnnext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HSC Detail :"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:layout_gravity="left"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/edt_text1">
+
+        <EditText
+            android:id="@+id/edtsch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:hint="School Name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/edt_text1">
+
+        <EditText
+            android:id="@+id/edtgrade2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:hint="Grade" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/edt_text1">
+
+        <EditText
+            android:id="@+id/edtpy2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:hint="Passing Year" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnnext1"
         android:layout_width="200dp"
         android:layout_height="45dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/btn"
         android:gravity="center"
         android:text="Next"
         android:textColor="@color/white"
         android:textStyle="bold" />
+
 </LinearLayout>
