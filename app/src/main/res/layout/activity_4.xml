@@ -12,26 +12,29 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn"
         android:gravity="center"
         android:text="Education"
-        android:textColor="@color/purple_700"
+        android:textColor="@color/white"
         android:textSize="20dp"
-        android:layout_marginBottom="20dp"
         android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SSC Detail :"
-        android:textSize="14dp"
-        android:textStyle="bold"
+        android:layout_gravity="left"
         android:layout_margin="10dp"
-        android:layout_gravity="left"/>
+        android:text="School Detail :"
+        android:textSize="14dp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="47dp"
         android:layout_margin="10dp"
+        android:gravity="center"
         android:background="@drawable/edt_text1">
 
         <EditText
@@ -40,14 +43,16 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@null"
-            android:hint="School Name" />
+            android:hint="School Name"
+            android:textSize="17dp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="47dp"
         android:layout_margin="10dp"
+        android:gravity="center"
         android:background="@drawable/edt_text1">
 
         <EditText
@@ -56,14 +61,16 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@null"
-            android:hint="Grade" />
+            android:hint="Grade"
+            android:textSize="17dp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="47dp"
         android:layout_margin="10dp"
+        android:gravity="center"
         android:background="@drawable/edt_text1">
 
         <EditText
@@ -72,39 +79,43 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@null"
-            android:hint="Passing Year" />
+            android:hint="Passing Year"
+            android:textSize="17dp" />
 
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HSC Detail :"
-        android:textSize="14dp"
-        android:textStyle="bold"
+        android:layout_gravity="left"
         android:layout_margin="10dp"
-        android:layout_gravity="left"/>
+        android:text="College Detail :"
+        android:textSize="14dp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="47dp"
         android:layout_margin="10dp"
+        android:gravity="center"
         android:background="@drawable/edt_text1">
 
         <EditText
-            android:id="@+id/edtsch1"
+            android:id="@+id/edtsch2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@null"
-            android:hint="School Name" />
+            android:hint="Coolege/University Name"
+            android:textSize="17dp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="47dp"
         android:layout_margin="10dp"
+        android:gravity="center"
         android:background="@drawable/edt_text1">
 
         <EditText
@@ -113,14 +124,16 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@null"
-            android:hint="Grade" />
+            android:hint="Grade"
+            android:textSize="17dp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="47dp"
         android:layout_margin="10dp"
+        android:gravity="center"
         android:background="@drawable/edt_text1">
 
         <EditText
@@ -129,7 +142,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@null"
-            android:hint="Passing Year" />
+            android:hint="Passing Year"
+            android:textSize="17dp" />
 
     </LinearLayout>
 
