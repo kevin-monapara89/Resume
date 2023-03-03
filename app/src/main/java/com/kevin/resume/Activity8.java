@@ -4,24 +4,23 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.TextView;
 
-public class Activity5 extends AppCompatActivity {
+public class Activity8 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_5);
-        TextView btnnext4;
+        setContentView(R.layout.activity_8);
+        TextView btnnext7;
 
-        btnnext4 = findViewById(R.id.btnnext4);
-        btnnext4.setOnClickListener(new View.OnClickListener() {
+        btnnext7 = findViewById(R.id.btnnext7);
+        btnnext7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                    Intent intent = new Intent(Activity5.this, Activity6.class);
-                    startActivity(intent);
+                Intent intent = new Intent(Activity8.this, Activity9.class);
+                startActivity(intent);
             }
         });
     }

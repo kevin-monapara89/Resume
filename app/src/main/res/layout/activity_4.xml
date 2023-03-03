@@ -27,18 +27,18 @@
         android:layout_gravity="left"
         android:layout_margin="10dp"
         android:text="School Detail :"
-        android:textSize="14dp"
+        android:textSize="16dp"
         android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="47dp"
         android:layout_margin="10dp"
-        android:gravity="center"
-        android:background="@drawable/edt_text1">
+        android:background="@drawable/edt_text1"
+        android:gravity="center">
 
         <EditText
-            android:id="@+id/edtsch1"
+            android:id="@+id/edtsch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -52,8 +52,8 @@
         android:layout_width="match_parent"
         android:layout_height="47dp"
         android:layout_margin="10dp"
-        android:gravity="center"
-        android:background="@drawable/edt_text1">
+        android:background="@drawable/edt_text1"
+        android:gravity="center">
 
         <EditText
             android:id="@+id/edtgrade1"
@@ -70,8 +70,8 @@
         android:layout_width="match_parent"
         android:layout_height="47dp"
         android:layout_margin="10dp"
-        android:gravity="center"
-        android:background="@drawable/edt_text1">
+        android:background="@drawable/edt_text1"
+        android:gravity="center">
 
         <EditText
             android:id="@+id/edtpy1"
@@ -80,6 +80,7 @@
             android:layout_margin="10dp"
             android:background="@null"
             android:hint="Passing Year"
+            android:inputType="date"
             android:textSize="17dp" />
 
     </LinearLayout>
@@ -90,18 +91,18 @@
         android:layout_gravity="left"
         android:layout_margin="10dp"
         android:text="College Detail :"
-        android:textSize="14dp"
+        android:textSize="16dp"
         android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="47dp"
         android:layout_margin="10dp"
-        android:gravity="center"
-        android:background="@drawable/edt_text1">
+        android:background="@drawable/edt_text1"
+        android:gravity="center">
 
         <EditText
-            android:id="@+id/edtsch2"
+            android:id="@+id/edtcol"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -115,8 +116,8 @@
         android:layout_width="match_parent"
         android:layout_height="47dp"
         android:layout_margin="10dp"
-        android:gravity="center"
-        android:background="@drawable/edt_text1">
+        android:background="@drawable/edt_text1"
+        android:gravity="center">
 
         <EditText
             android:id="@+id/edtgrade2"
@@ -124,7 +125,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@null"
-            android:hint="Grade"
+            android:hint="Degree/Cource"
             android:textSize="17dp" />
 
     </LinearLayout>
@@ -133,8 +134,8 @@
         android:layout_width="match_parent"
         android:layout_height="47dp"
         android:layout_margin="10dp"
-        android:gravity="center"
-        android:background="@drawable/edt_text1">
+        android:background="@drawable/edt_text1"
+        android:gravity="center">
 
         <EditText
             android:id="@+id/edtpy2"
@@ -148,7 +149,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/btnnext1"
+        android:id="@+id/btnnext3"
         android:layout_width="200dp"
         android:layout_height="45dp"
         android:layout_marginTop="50dp"

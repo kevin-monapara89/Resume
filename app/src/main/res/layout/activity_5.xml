@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_margin="10dp"
     android:gravity="center"
     android:orientation="vertical"
@@ -21,60 +21,75 @@
         android:textSize="20dp"
         android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="10dp"
+        android:text="Select Your Hobbys :"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
     <CheckBox
         android:id="@+id/cricket"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="7dp"
-        android:layout_marginTop="50dp"
-        android:text="Cricket"
-        android:textColor="#5433FF"/>
+        android:text="Reading"
+        android:textColor="#5433FF" />
 
     <CheckBox
         android:id="@+id/football"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:layout_marginRight="3dp"
-        android:text="Football"
-        android:textColor="#5433FF"/>
+        android:text="Danceing"
+        android:textColor="#5433FF" />
 
     <CheckBox
         android:id="@+id/hockey"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="5dp"
-        android:text="Hockey"
-        android:textColor="#5433FF"/>
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="9dp"
+
+        android:text="Singing"
+        android:textColor="#5433FF" />
 
     <CheckBox
         android:id="@+id/kabaddi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="3dp"
-        android:text="Kabaddi"
-        android:textColor="#5433FF"/>
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="16dp"
+        android:text="Sport"
+        android:textColor="#5433FF" />
 
     <CheckBox
         android:id="@+id/chess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="9dp"
-        android:text="Chess"
-        android:textColor="#5433FF"/>
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="4dp"
+        android:text="Traveling"
+        android:textColor="#5433FF" />
 
     <CheckBox
         android:id="@+id/running"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="3dp"
-        android:text="Running"
-        android:textColor="#5433FF"/>
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="5dp"
+        android:text="Photography"
+        android:textColor="#5433FF" />
 
     <TextView
-        android:id="@+id/btnnext1"
+        android:id="@+id/btnnext4"
         android:layout_width="200dp"
         android:layout_height="45dp"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="220dp"
         android:background="@drawable/btn"
         android:gravity="center"
         android:text="Next"

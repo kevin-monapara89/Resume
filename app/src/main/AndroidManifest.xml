@@ -12,6 +12,18 @@
         android:theme="@style/Theme.Resume"
         tools:targetApi="31">
         <activity
+            android:name=".Activity9"
+            android:exported="false" />
+        <activity
+            android:name=".Activity8"
+            android:exported="false" />
+        <activity
+            android:name=".Activity7"
+            android:exported="false" />
+        <activity
+            android:name=".Activity6"
+            android:exported="false" />
+        <activity
             android:name=".Activity5"
             android:exported="false" />
         <activity

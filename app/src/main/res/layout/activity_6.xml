@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activity6">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn"
+        android:gravity="center"
+        android:text="Skill"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="10dp"
+        android:text="Tell About Your Skills :"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edt_text1">
+
+        <EditText
+            android:id="@+id/edtaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="17dp"
+            android:background="@null"
+            android:hint="Skill" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/btnnext5"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/btn"
+        android:gravity="center"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>
