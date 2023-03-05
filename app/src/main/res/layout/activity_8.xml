@@ -29,26 +29,17 @@
         android:textSize="16dp"
         android:textStyle="bold" />
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="230dp"
-        android:src="@drawable/template1" />
-
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="230dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/template1" />
+    <TextView
+        android:id="@+id/template1"
+        android:layout_width="230dp"
+        android:layout_height="270dp"
+        android:background="@drawable/res1" />
 
     <TextView
-        android:id="@+id/btnnext7"
-        android:layout_width="200dp"
-        android:layout_height="45dp"
-        android:background="@drawable/btn"
-        android:gravity="center"
+        android:id="@+id/template2"
+        android:layout_width="230dp"
+        android:layout_height="270dp"
         android:layout_marginTop="20dp"
-        android:text="Next"
-        android:textColor="@color/white"
-        android:textStyle="bold" />
+        android:background="@drawable/res2" />
 
 </LinearLayout>

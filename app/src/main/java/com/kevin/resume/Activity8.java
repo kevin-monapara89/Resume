@@ -12,10 +12,10 @@ public class Activity8 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_8);
-        TextView btnnext7;
+        TextView template1;
 
-        btnnext7 = findViewById(R.id.btnnext7);
-        btnnext7.setOnClickListener(new View.OnClickListener() {
+        template1 = findViewById(R.id.template1);
+        template1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 

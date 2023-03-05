@@ -144,6 +144,7 @@
             android:layout_margin="10dp"
             android:background="@null"
             android:hint="Passing Year"
+            android:inputType="date"
             android:textSize="17dp" />
 
     </LinearLayout>
@@ -152,7 +153,7 @@
         android:id="@+id/btnnext3"
         android:layout_width="200dp"
         android:layout_height="45dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/btn"
         android:gravity="center"
         android:text="Next"
