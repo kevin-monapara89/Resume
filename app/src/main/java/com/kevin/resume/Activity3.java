@@ -39,7 +39,7 @@ public class Activity3 extends AppCompatActivity {
                 } else if (job.isEmpty()) {
                     edtjob.setError("Enter Job Type!");
                 } else if (possition.isEmpty()) {
-                    edtposs.setError("Enter Possition!");
+                    edtposs.setError("Enter Joining Year!");
                 } else {
                     Intent intent = new Intent(Activity3.this, Activity4.class);
                     intent.putExtra("company", company);

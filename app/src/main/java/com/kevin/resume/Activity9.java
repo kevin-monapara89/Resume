@@ -4,6 +4,7 @@ import static com.kevin.resume.R.*;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
@@ -13,22 +14,29 @@ public class Activity9 extends AppCompatActivity {
 
     TextView txtaddress, txtphone, txtemail;
 
+    SharedPreferences preferences;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_9);
 
-        txtaddress = findViewById(id.txtaddress);
-        txtphone = findViewById(id.txtphone);
-        txtemail = findViewById(id.txtemail);
+        preferences = getSharedPreferences("address",0);
+        preferences = getSharedPreferences("phone",0);
+        preferences = getSharedPreferences("email",0);
 
-        Intent intent = getIntent();
-        String address = intent.getStringExtra("address");
-        txtaddress.setText("Address : \n\t"+txtaddress);
-        String phone2 = intent.getStringExtra("phone");
-        txtphone.setText("Phone No : \n\t"+txtphone);
-        String email2 = intent.getStringExtra("email");
-        txtemail.setText("Email Id : \t"+txtemail);
+        txtaddress = findViewById(R.id.txtaddress);
+        txtphone = findViewById(R.id.txtphone);
+        txtemail = findViewById(R.id.txtemail);
+
+        String address = preferences.getString("address","");
+        String phone = preferences.getString("phone"," ");
+        String email = preferences.getString("email", " ");
+
+        txtaddress.setText(address);
+        txtphone.setText(phone);
+        txtemail.setText(email);
+
     }
 }
