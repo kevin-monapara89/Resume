@@ -36,17 +36,17 @@ public class Activity4 extends AppCompatActivity {
                 String passing2 = edtpy2.getText().toString();
 
                 if (school.isEmpty()) {
-                    edtsch.setError("Enter Company Name!");
+                    edtsch.setError("Enter school Name!");
                 } else if (grade1.isEmpty()) {
-                    edtgrade1.setError("Enter Experiance!");
+                    edtgrade1.setError("Enter Grade!");
                 } else if (passing.isEmpty()) {
-                    edtpy1.setError("Enter Job Type!");
+                    edtpy1.setError("Enter Passing Year!");
                 } else if (college.isEmpty()) {
-                    edtcol.setError("Enter Possition!");
+                    edtcol.setError("Enter College Name!");
                 } else if (grade2.isEmpty()) {
-                    edtgrade2.setError("Enter Possition!");
+                    edtgrade2.setError("Enter Grade!");
                 }else if (passing2.isEmpty()) {
-                    edtpy2.setError("Enter Possition!");
+                    edtpy2.setError("Enter Passing Year!");
                 }
                 else {
                     Intent intent = new Intent(Activity4.this, Activity5.class);

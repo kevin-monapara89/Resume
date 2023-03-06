@@ -29,7 +29,7 @@
         android:background="@drawable/edt_text1">
 
         <EditText
-            android:id="@+id/edtname"
+            android:id="@+id/edtproname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -46,7 +46,7 @@
         android:background="@drawable/edt_text1">
 
         <EditText
-            android:id="@+id/edtaddress"
+            android:id="@+id/edtdetail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
