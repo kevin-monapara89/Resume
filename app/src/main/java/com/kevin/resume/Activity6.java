@@ -28,7 +28,7 @@ public class Activity6 extends AppCompatActivity {
                 String skill = edtskill.getText().toString();
 
                 if (skill.isEmpty()) {
-                    edtskill.setError("Enter school Name!");
+                    edtskill.setError("Enter Skills!");
                 } else {
                         Intent intent = new Intent(Activity6.this, Activity7.class);
                         intent.putExtra("skill", skill);

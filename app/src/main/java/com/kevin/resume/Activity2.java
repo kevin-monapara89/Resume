@@ -1,6 +1,7 @@
 package com.kevin.resume;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,13 +10,26 @@ import android.widget.TextView;
 
 public class Activity2 extends AppCompatActivity {
 
+
+    TextView btnnext1;
+    EditText edtname, edtaddress, edtemail, edtphone;
+
+    SharedPreferences preferences;
+    SharedPreferences.Editor editor;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
 
-        TextView btnnext1;
-        EditText edtname, edtaddress, edtemail, edtphone;
+        preferences = getSharedPreferences("name",0);
+        editor = preferences.edit();
+        preferences = getSharedPreferences("address",0);
+        editor = preferences.edit();
+        preferences = getSharedPreferences("phone",0);
+        editor = preferences.edit();
+        preferences = getSharedPreferences("email",0);
+        editor = preferences.edit();
 
         btnnext1 = findViewById(R.id.btnnext1);
         edtname = findViewById(R.id.edtname);
@@ -28,9 +42,14 @@ public class Activity2 extends AppCompatActivity {
             public void onClick(View view) {
 
                 String name = edtname.getText().toString();
+                editor.putString("name",name);
                 String address = edtaddress.getText().toString();
+                editor.putString("address",address);
                 String email = edtemail.getText().toString();
+                editor.putString("email",email);
                 String phone = edtphone.getText().toString();
+                editor.putString("phone",phone);
+                editor.commit();
 
                 if (name.isEmpty()) {
                     edtname.setError("Enter Name!");
@@ -41,11 +60,7 @@ public class Activity2 extends AppCompatActivity {
                 } else if (phone.isEmpty()) {
                     edtphone.setError("Enter Phone Number!");
                 } else {
-                    Intent intent = new Intent(Activity2.this, Activity3.class);
-                    intent.putExtra("name", name);
-                    intent.putExtra("address",address);
-                    intent.putExtra("email",email);
-                    intent.putExtra("phone",phone);
+                    Intent intent = new Intent(Activity2.this, Activity9.class);
                     startActivity(intent);
                 }
             }

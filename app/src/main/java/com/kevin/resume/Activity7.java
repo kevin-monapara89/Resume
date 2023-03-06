@@ -30,7 +30,7 @@ public class Activity7 extends AppCompatActivity {
                 String detail = edtdetail.getText().toString();
 
                 if (proname.isEmpty()) {
-                    edtproname.setError("Enter school Name!");
+                    edtproname.setError("Enter Project Name!");
                 } else {
                     Intent intent = new Intent(Activity7.this, Activity8.class);
                     intent.putExtra("detail", detail);
