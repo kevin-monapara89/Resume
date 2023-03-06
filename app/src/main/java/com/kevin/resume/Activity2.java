@@ -60,7 +60,7 @@ public class Activity2 extends AppCompatActivity {
                 } else if (phone.isEmpty()) {
                     edtphone.setError("Enter Phone Number!");
                 } else {
-                    Intent intent = new Intent(Activity2.this, Activity9.class);
+                    Intent intent = new Intent(Activity2.this, Activity3.class);
                     startActivity(intent);
                 }
             }
