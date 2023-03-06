@@ -26,9 +26,10 @@ public class Activity9 extends AppCompatActivity {
         Intent intent = getIntent();
         String address = intent.getStringExtra("address");
         txtaddress.setText("Address : \n\t"+txtaddress);
-        String phone2 = intent.getStringExtra("phone");
+        String phone = intent.getStringExtra("phone");
         txtphone.setText("Phone No : \n\t"+txtphone);
-        String email2 = intent.getStringExtra("email");
+        String email = intent.getStringExtra("email");
         txtemail.setText("Email Id : \t"+txtemail);
+
     }
 }
