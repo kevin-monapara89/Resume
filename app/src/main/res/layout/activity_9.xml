@@ -36,9 +36,9 @@
                 android:textStyle="bold" />
 
             <LinearLayout
-                android:layout_width="150dp"
+                android:layout_width="135dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="15dp"
+                android:layout_marginLeft="15dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -55,35 +55,54 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:textColor="@color/white"
-                    android:textSize="14dp" />
+                    android:textColor="#CCCCCC"
+                    android:textSize="18dp" />
 
                 <TextView
                     android:id="@+id/txtphone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:textColor="@color/white"
-                    android:textSize="14dp" />
+                    android:textColor="#CCCCCC"
+                    android:textSize="18dp" />
 
                 <TextView
                     android:id="@+id/txtemail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:textColor="@color/white"
-                    android:textSize="14dp" />
+                    android:textColor="#CCCCCC"
+                    android:textSize="16dp" />
 
             </LinearLayout>
 
-            <TextView
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:layout_margin="15dp"
-                android:text="SKILLS"
-                android:textColor="@color/white"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SKILLS"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtskill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SKILLS"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
@@ -101,10 +120,10 @@
             android:id="@+id/txtname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="3dp"
             android:textColor="#455462"
-            android:textSize="25dp"
+            android:textSize="28dp"
             android:textStyle="bold" />
 
         <View
@@ -117,29 +136,28 @@
             android:id="@+id/txtjob"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="job"
+            android:layout_marginLeft="10dp"
             android:textSize="18dp"
             android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="215dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginLeft="10dp"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="3dp"
                 android:text="EDUCATION"
                 android:textColor="#455462"
-                android:textSize="20dp"
+                android:textSize="18dp"
                 android:textStyle="bold" />
 
             <View
-                android:layout_width="match_parent"
+                android:layout_width="100dp"
                 android:layout_height="3dp"
                 android:background="#516475" />
 
@@ -162,6 +180,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
                         android:text="yr"
+                        android:textColor="#455462"
                         android:textSize="23dp"
                         android:textStyle="bold" />
 
@@ -169,8 +188,9 @@
                         android:id="@+id/txtpy2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="37dp"
+                        android:layout_marginTop="32dp"
                         android:text="yr"
+                        android:textColor="#455462"
                         android:textSize="23dp"
                         android:textStyle="bold" />
 
@@ -204,7 +224,7 @@
                         android:id="@+id/txtcol"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="5dp"
                         android:layout_marginBottom="10dp"
                         android:text="college name"
                         android:textStyle="bold"
@@ -229,7 +249,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
-
             android:orientation="vertical">
 
             <TextView
@@ -238,11 +257,11 @@
                 android:layout_marginBottom="5dp"
                 android:text="EXPERIENCE"
                 android:textColor="#455462"
-                android:textSize="20dp"
+                android:textSize="18dp"
                 android:textStyle="bold" />
 
             <View
-                android:layout_width="match_parent"
+                android:layout_width="107dp"
                 android:layout_height="3dp"
                 android:background="#516475" />
 
@@ -259,11 +278,13 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/txtjoin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
                         android:text="year"
+                        android:textColor="#455462"
                         android:textSize="23dp"
                         android:textStyle="bold" />
 
@@ -286,9 +307,10 @@
                         android:textSize="18dp" />
 
                     <TextView
+                        android:id="@+id/txtexp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
                         android:text="experiance"
                         android:textSize="18dp" />
 
@@ -301,6 +323,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
             android:orientation="vertical">
 
         <TextView
@@ -309,11 +333,11 @@
             android:layout_marginBottom="5dp"
             android:text="PROJECT DETAIL"
             android:textColor="#455462"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:textStyle="bold" />
 
         <View
-            android:layout_width="match_parent"
+            android:layout_width="145dp"
             android:layout_height="3dp"
             android:background="#516475" />
 
@@ -340,7 +364,8 @@
         <LinearLayout
             android:layout_width="215dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -350,11 +375,11 @@
                 android:layout_marginBottom="5dp"
                 android:text="INTRESTS"
                 android:textColor="#455462"
-                android:textSize="20dp"
+                android:textSize="18dp"
                 android:textStyle="bold" />
 
             <View
-                android:layout_width="match_parent"
+                android:layout_width="85dp"
                 android:layout_height="3dp"
                 android:background="#516475" />
 

@@ -22,10 +22,7 @@ public class Activity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
 
-        preferences = getSharedPreferences("name",0);
-        preferences = getSharedPreferences("address",0);
-        preferences = getSharedPreferences("phone",0);
-        preferences = getSharedPreferences("email",0);
+        preferences = getSharedPreferences("data",0);
         editor = preferences.edit();
 
         btnnext1 = findViewById(R.id.btnnext1);

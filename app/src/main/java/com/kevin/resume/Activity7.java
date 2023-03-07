@@ -23,8 +23,7 @@ public class Activity7 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_7);
 
-        preferences = getSharedPreferences("project",0);
-        preferences = getSharedPreferences("detail",0);
+        preferences = getSharedPreferences("data",0);
         editor = preferences.edit();
 
         btnnext6 = findViewById(R.id.btnnext6);

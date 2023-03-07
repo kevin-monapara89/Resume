@@ -18,6 +18,9 @@ public class Activity5 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_5);
 
+        preferences = getSharedPreferences("data",0);
+        editor = preferences.edit();
+
         btnnext4 = findViewById(R.id.btnnext4);
         btnnext4.setOnClickListener(new View.OnClickListener() {
             @Override

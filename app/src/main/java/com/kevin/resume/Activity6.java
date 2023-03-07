@@ -21,7 +21,7 @@ public class Activity6 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_6);
 
-        preferences = getSharedPreferences("skill",0);
+        preferences = getSharedPreferences("data",0);
         editor = preferences.edit();
 
         btnnext5 = findViewById(R.id.btnnext5);

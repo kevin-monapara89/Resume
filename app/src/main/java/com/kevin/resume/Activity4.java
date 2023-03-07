@@ -20,12 +20,7 @@ public class Activity4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_4);
 
-        preferences = getSharedPreferences("school",0);
-        preferences = getSharedPreferences("grade1",0);
-        preferences = getSharedPreferences("passing1",0);
-        preferences = getSharedPreferences("college",0);
-        preferences = getSharedPreferences("grade2",0);
-        preferences = getSharedPreferences("passing2",0);
+        preferences = getSharedPreferences("data",0);
         editor = preferences.edit();
 
         btnnext3 = findViewById(R.id.btnnext3);

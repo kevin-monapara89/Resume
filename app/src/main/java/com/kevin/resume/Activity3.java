@@ -24,10 +24,7 @@ public class Activity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_3);
 
-        preferences = getSharedPreferences("company",0);
-        preferences = getSharedPreferences("experience",0);
-        preferences = getSharedPreferences("Job",0);
-        preferences = getSharedPreferences("joining",0);
+        preferences = getSharedPreferences("data",0);
         editor = preferences.edit();
 
         btnnext2 = findViewById(R.id.btnnext2);
