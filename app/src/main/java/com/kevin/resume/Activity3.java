@@ -25,7 +25,7 @@ public class Activity3 extends AppCompatActivity {
         setContentView(R.layout.activity_3);
 
         preferences = getSharedPreferences("company",0);
-        preferences = getSharedPreferences("experiance",0);
+        preferences = getSharedPreferences("experience",0);
         preferences = getSharedPreferences("Job",0);
         preferences = getSharedPreferences("joining",0);
         editor = preferences.edit();
