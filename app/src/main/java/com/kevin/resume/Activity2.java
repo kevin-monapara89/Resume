@@ -23,11 +23,8 @@ public class Activity2 extends AppCompatActivity {
         setContentView(R.layout.activity_2);
 
         preferences = getSharedPreferences("name",0);
-        editor = preferences.edit();
         preferences = getSharedPreferences("address",0);
-        editor = preferences.edit();
         preferences = getSharedPreferences("phone",0);
-        editor = preferences.edit();
         preferences = getSharedPreferences("email",0);
         editor = preferences.edit();
 
