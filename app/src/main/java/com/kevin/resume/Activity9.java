@@ -23,7 +23,7 @@ public class Activity9 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_9);
 
-        preferences = getSharedPreferences("data",0);
+        preferences = getSharedPreferences("data", 0);
 
         txtname = findViewById(R.id.txtname);
         String name = preferences.getString("name", " ");
@@ -66,16 +66,16 @@ public class Activity9 extends AppCompatActivity {
         txtemail.setText("Email ID : \t\t" + email);
         txtjob.setText(job);
         txtsch.setText(school);
-        txtgrade1.setText(grade1);
+        txtgrade1.setText("Grade = "+grade1);
         txtcol.setText(college);
-        txtgrade2.setText(grade2);
+        txtgrade2.setText("Grade = "+grade2);
         txtcompany.setText(company);
         txtexp.setText(experience);
-        txtproject.setText(project);
-        txtdetail.setText(detail);
         txtskill.setText(skill);
         txtjoin.setText(joining);
         txtpy1.setText(passing1);
         txtpy2.setText(passing2);
+        txtproject.setText(project);
+        txtdetail.setText(detail);
     }
 }

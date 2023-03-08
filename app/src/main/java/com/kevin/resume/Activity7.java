@@ -10,11 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Activity7 extends AppCompatActivity {
-
-
     TextView btnnext6;
     EditText edtproname, edtdetail;
-
     SharedPreferences preferences;
     SharedPreferences.Editor editor;
     @SuppressLint("MissingInflatedId")
@@ -37,9 +34,12 @@ public class Activity7 extends AppCompatActivity {
                 editor.putString("project",project);
                 String detail = edtdetail.getText().toString();
                 editor.putString("detail",detail);
+                editor.commit();
 
                 if (project.isEmpty()) {
                     edtproname.setError("Enter Project Name!");
+                } else if (detail.isEmpty()) {
+                    edtdetail.setError("Enter Detail!");
                 } else {
                     Intent intent = new Intent(Activity7.this, Activity8.class);
                     startActivity(intent);
