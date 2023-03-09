@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class Activity9 extends AppCompatActivity {
 
-    TextView txtaddress, txtphone, txtemail, txtname, txtjob, txtsch, txtgrade1, txtcol, txtgrade2;
+    TextView txtaddress, txtphone, txtemail, txtname, txtjob, txtsch, txtgrade1, txtcol, txtdegree;
     TextView txtcompany, txtexp, txtproject, txtdetail, txtskill, txtjoin, txtpy1, txtpy2;
     SharedPreferences preferences;
     SharedPreferences.Editor editor;
@@ -49,8 +49,8 @@ public class Activity9 extends AppCompatActivity {
         String passing1 = preferences.getString("passing1", " ");
         txtcol = findViewById(R.id.txtcol);
         String college = preferences.getString("college", " ");
-        txtgrade2 = findViewById(R.id.txtgrade2);
-        String grade2 = preferences.getString("grade2", " ");
+        txtdegree = findViewById(id.txtdegree);
+        String degree = preferences.getString("degree", " ");
         txtpy2 = findViewById(R.id.txtpy2);
         String passing2 = preferences.getString("passing2", " ");
         txtskill = findViewById(R.id.txtskill);
@@ -68,7 +68,8 @@ public class Activity9 extends AppCompatActivity {
         txtsch.setText(school);
         txtgrade1.setText("Grade = "+grade1);
         txtcol.setText(college);
-        txtgrade2.setText("Grade = "+grade2);
+        txtdegree.setText(" = "+degree);
+        txtdegree.setText("Degree = "+degree);
         txtcompany.setText(company);
         txtexp.setText(experience);
         txtskill.setText(skill);

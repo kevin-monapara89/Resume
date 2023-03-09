@@ -20,25 +20,27 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="140dp"
+                android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_margin="10dp"
-                android:background="@color/teal_700"
-                android:orientation="vertical" />
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:background="#1E7D7A"
+                android:orientation="vertical">
 
-            <TextView
-                android:layout_width="150dp"
-                android:layout_height="100dp"
-                android:layout_margin="15dp"
-                android:text="ABOUT ME"
-                android:textColor="@color/white"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
+                android:layout_marginTop="40dp"
                 android:layout_marginBottom="10dp"
                 android:text="CONTACT"
                 android:textColor="@color/white"
@@ -50,7 +52,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
                 android:textColor="#CCCCCC"
                 android:textSize="18dp" />
 
@@ -59,7 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
                 android:textColor="#CCCCCC"
                 android:textSize="18dp" />
 
@@ -68,7 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
                 android:textColor="#CCCCCC"
                 android:textSize="16dp" />
 
@@ -82,7 +84,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="SKILLS"
+                    android:text="Hobbys"
                     android:textColor="@color/white"
                     android:textSize="20dp"
                     android:textStyle="bold" />
@@ -118,6 +120,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginBottom="3dp"
+            android:text="Your Name"
             android:textColor="#455462"
             android:textSize="28dp"
             android:textStyle="bold" />
@@ -133,6 +136,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
+            android:text="Job"
             android:textSize="18dp"
             android:textStyle="bold" />
 
@@ -175,7 +179,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
-                        android:text="yr"
+                        android:text="Year"
                         android:textColor="#455462"
                         android:textSize="23dp"
                         android:textStyle="bold" />
@@ -185,7 +189,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="32dp"
-                        android:text="yr"
+                        android:text="Year"
                         android:textColor="#455462"
                         android:textSize="23dp"
                         android:textStyle="bold" />
@@ -205,7 +209,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
                         android:text="school name"
-                        android:textSize="18dp"
+                        android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -223,15 +227,15 @@
                         android:layout_marginTop="5dp"
                         android:layout_marginBottom="10dp"
                         android:text="college name"
-                        android:textSize="18dp"
+                        android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/txtgrade2"
+                        android:id="@+id/txtdegree"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
-                        android:text="grade"
+                        android:text="Degree/Cource"
                         android:textSize="18dp" />
 
                 </LinearLayout>
@@ -299,7 +303,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
                         android:text="company name"
-                        android:textSize="18dp"
+                        android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -357,30 +361,32 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="215dp"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="50dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:text="SKILLS"
+            android:textColor="#455462"
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:text="SKILLS"
-                android:textColor="#455462"
-                android:textSize="18dp"
-                android:textStyle="bold" />
+        <View
+            android:layout_width="61dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="10dp"
+            android:background="#516475" />
 
-            <View
-                android:layout_width="61dp"
-                android:layout_height="3dp"
-                android:background="#516475" />
-
-            </LinearLayout>
-
-        </LinearLayout>
+        <TextView
+            android:id="@+id/txtskdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="detail"
+            android:textSize="18dp" />
 
     </LinearLayout>
+
+</LinearLayout>

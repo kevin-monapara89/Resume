@@ -8,7 +8,8 @@ import android.widget.TextView;
 
 public class Activity10 extends AppCompatActivity {
 
-    TextView txtname1, txtphone1, txtemail1, txtaddress1;
+    TextView txtname1, txtphone1, txtemail1, txtaddress1, txtskdetail1, txtcompany1, txtexp1;
+    TextView txtsch1, txtgrade01, txtcol1, txtproname1, txtdetail1;
 
     SharedPreferences preferences;
     SharedPreferences.Editor editor;
@@ -21,14 +22,15 @@ public class Activity10 extends AppCompatActivity {
 
         preferences = getSharedPreferences("data", 0);
 
-        txtname1 = findViewById(R.id.txtname1);
+        txtname1 = findViewById(R.id.name);
         String name = preferences.getString("name", " ");
-        txtaddress1 = findViewById(R.id.txtaddress1);
+        txtaddress1 = findViewById(R.id.address);
         String address = preferences.getString("address", " ");
-        txtphone1 = findViewById(R.id.txtphone1);
+        txtphone1 = findViewById(R.id.phone);
         String phone = preferences.getString("phone", " ");
-        txtemail1 = findViewById(R.id.txtemail1);
+        txtemail1 = findViewById(R.id.email);
         String email = preferences.getString("email", " ");
+
 
         txtname1.setText(name);
         txtaddress1.setText(address);
