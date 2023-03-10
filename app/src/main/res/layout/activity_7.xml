@@ -23,6 +23,22 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg2"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+            android:text="Tell About Your Project :"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="47dp"
         android:layout_margin="10dp"
         android:gravity="center"
@@ -53,6 +69,8 @@
             android:textSize="17dp"
             android:background="@null"
             android:hint="Details" />
+
+    </LinearLayout>
 
     </LinearLayout>
 

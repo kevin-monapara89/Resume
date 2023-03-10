@@ -3,17 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_margin="10dp"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".Activity4">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
         android:background="@drawable/btn"
         android:gravity="center"
         android:text="Education"
@@ -21,78 +20,94 @@
         android:textSize="20dp"
         android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="left"
+        android:background="@drawable/bg2"
         android:layout_margin="10dp"
-        android:text="School Detail :"
-        android:textSize="16dp"
-        android:textStyle="bold" />
+        android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:layout_margin="10dp"
-        android:background="@drawable/edt_text1"
-        android:gravity="center">
-
-        <EditText
-            android:id="@+id/edtsch"
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
+            android:text="School Detail :"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
             android:layout_margin="10dp"
-            android:background="@null"
-            android:hint="School Name"
-            android:textSize="17dp" />
+            android:background="@drawable/edt_text1"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/edtsch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:hint="School Name"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/edt_text1"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/edtgrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:hint="Grade"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/edt_text1"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/edtpy1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:hint="Passing Year"
+                android:inputType="date"
+                android:textSize="17dp" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:layout_margin="10dp"
-        android:background="@drawable/edt_text1"
-        android:gravity="center">
-
-        <EditText
-            android:id="@+id/edtgrade"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@null"
-            android:hint="Grade"
-            android:textSize="17dp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:layout_margin="10dp"
-        android:background="@drawable/edt_text1"
-        android:gravity="center">
-
-        <EditText
-            android:id="@+id/edtpy1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@null"
-            android:hint="Passing Year"
-            android:inputType="date"
-            android:textSize="17dp" />
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="left"
+        android:background="@drawable/bg2"
         android:layout_margin="10dp"
-        android:text="College Detail :"
-        android:textSize="16dp"
-        android:textStyle="bold" />
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="College Detail :"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="16dp"
+            android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -149,13 +164,16 @@
 
     </LinearLayout>
 
+    </LinearLayout>
+
     <TextView
         android:id="@+id/btnnext3"
         android:layout_width="200dp"
         android:layout_height="45dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/btn"
         android:gravity="center"
+        android:layout_gravity="center"
         android:text="Next"
         android:textColor="@color/white"
         android:textStyle="bold" />
