@@ -30,6 +30,7 @@ public class Activity6 extends AppCompatActivity {
         btnnext5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 String skill = edtskill.getText().toString();
                 editor.putString("skill",skill);
 

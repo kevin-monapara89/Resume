@@ -36,39 +36,28 @@ public class Activity5 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                String reading = reading1.getText().toString();
-                editor.putString("reading",reading);
-                String dancing  = danceing1.getText().toString();
-                editor.putString("dancing",dancing);
-                String singing = singing1.getText().toString();
-                editor.putString("singing",singing);
-                String sport = sport1.getText().toString();
-                editor.putString("sport",sport);
-                String traveling = sport1.getText().toString();
-                editor.putString("traveling",traveling);
-                String photography = photography1.getText().toString();
-                editor.putString("sport",photography);
-                editor.commit();
-
-                String s = " ";
+                String hobby = " ";
                 if (reading1.isChecked()) {
-                    s += "Reading \n";
+                    hobby += "Reading \n";
                 }
                 if (danceing1.isChecked()) {
-                    s += "Dancing \n";
+                    hobby += "Dancing \n";
                 }
                 if (singing1.isChecked()) {
-                    s += "Singing \n";
+                    hobby += "Singing \n";
                 }
                 if (sport1.isChecked()) {
-                    s += "Sport \n";
+                    hobby += "Sport \n";
                 }
                 if (traveling1.isChecked()) {
-                    s += "Traveling \n";
+                    hobby += "Traveling \n";
                 }
                 if (photography1.isChecked()) {
-                    s += "Photography \n";
+                    hobby += "Photography \n";
                 }
+
+                hobby = reading1.getText().toString();
+                editor.commit();
 
                 Intent intent = new Intent(Activity5.this, Activity6.class);
                 startActivity(intent);
