@@ -104,8 +104,9 @@
                 android:layout_marginTop="15dp"
                 android:text="phone no. :"
                 android:textColor="#000000"
-                android:textStyle="bold"
-                android:textSize="18dp" />
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/phone"
                 android:layout_width="match_parent"
@@ -119,8 +120,9 @@
                 android:layout_marginTop="20dp"
                 android:text="Email ID :"
                 android:textColor="#000000"
-                android:textStyle="bold"
-                android:textSize="18dp" />
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/email"
                 android:layout_width="match_parent"
@@ -134,8 +136,9 @@
                 android:layout_marginTop="20dp"
                 android:text="Address :"
                 android:textColor="#000000"
-                android:textStyle="bold"
-                android:textSize="18dp" />
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/address"
                 android:layout_width="match_parent"
@@ -205,15 +208,6 @@
                 android:layout_margin="20dp"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:letterSpacing=".2"
-                    android:text="WORK EXPERIANCE"
-                    android:textColor="#000000"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
-
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
@@ -234,8 +228,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Company name"
-                    android:textSize="19dp"
                     android:textColor="#000000"
+                    android:textSize="19dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -351,6 +345,15 @@
 
 
             </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing=".2"
+                android:text="WORK EXPERIANCE"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 

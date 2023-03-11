@@ -49,7 +49,7 @@ public class Activity9 extends AppCompatActivity {
         String passing1 = preferences.getString("passing1", " ");
         txtcol = findViewById(R.id.txtcol);
         String college = preferences.getString("college", " ");
-        txtdegree = findViewById(id.txtdegree);
+        txtdegree = findViewById(R.id.txtdegree);
         String degree = preferences.getString("degree", " ");
         txtpy2 = findViewById(R.id.txtpy2);
         String passing2 = preferences.getString("passing2", " ");
@@ -63,9 +63,9 @@ public class Activity9 extends AppCompatActivity {
         String hobby = preferences.getString("hobby", "");
 
         txtname.setText(name);
-        txtaddress.setText("Address : \n\t" + address);
-        txtphone.setText("Phone No. : \t" + phone);
-        txtemail.setText("Email ID : \t\t" + email);
+        txtaddress.setText(address);
+        txtphone.setText(phone);
+        txtemail.setText(email);
         txtjob.setText(job);
         txtsch.setText(school);
         txtgrade1.setText("Grade : "+grade1);

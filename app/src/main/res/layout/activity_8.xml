@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="10dp"
     android:gravity="center"
     android:orientation="vertical"
-    android:layout_margin="10dp"
     tools:context=".Activity8">
 
     <TextView
@@ -33,13 +33,13 @@
         android:id="@+id/template1"
         android:layout_width="230dp"
         android:layout_height="270dp"
-        android:background="@drawable/res1" />
+        android:background="@drawable/ss9" />
 
     <TextView
         android:id="@+id/template2"
         android:layout_width="230dp"
         android:layout_height="270dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/sstemplate2" />
+        android:background="@drawable/ss10" />
 
 </LinearLayout>
