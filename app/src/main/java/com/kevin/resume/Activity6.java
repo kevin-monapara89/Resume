@@ -33,6 +33,7 @@ public class Activity6 extends AppCompatActivity {
 
                 String skill = edtskill.getText().toString();
                 editor.putString("skill",skill);
+                editor.commit();
 
                 if (skill.isEmpty()) {
                     edtskill.setError("Enter Skills!");

@@ -53,7 +53,7 @@ public class Activity9 extends AppCompatActivity {
         String degree = preferences.getString("degree", " ");
         txtpy2 = findViewById(R.id.txtpy2);
         String passing2 = preferences.getString("passing2", " ");
-        txtskdetail = findViewById(id.txtskdetail);
+        txtskdetail = findViewById(R.id.txtskdetail);
         String skill = preferences.getString("skill", " ");
         txtproject = findViewById(R.id.txtproject);
         String project = preferences.getString("project", " ");
@@ -68,17 +68,17 @@ public class Activity9 extends AppCompatActivity {
         txtemail.setText("Email ID : \t\t" + email);
         txtjob.setText(job);
         txtsch.setText(school);
-        txtgrade1.setText("Grade = "+grade1);
+        txtgrade1.setText("Grade : "+grade1);
         txtcol.setText(college);
-        txtdegree.setText(" = "+degree);
-        txtdegree.setText("Degree = "+degree);
+        txtdegree.setText("Degree : "+degree);
         txtcompany.setText(company);
-        txtexp.setText(experience);
+        txtexp.setText("Experience : "+experience);
         txtskdetail.setText(skill);
         txtjoin.setText(joining);
         txtpy1.setText(passing1);
         txtpy2.setText(passing2);
         txtproject.setText(project);
         txthobby.setText(hobby);
+        txtdetail.setText(detail);
     }
 }
