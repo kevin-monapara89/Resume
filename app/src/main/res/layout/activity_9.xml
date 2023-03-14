@@ -22,10 +22,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:layout_marginTop="30dp"
                 android:layout_marginLeft="10dp"
-                android:gravity="center"
+                android:layout_marginTop="30dp"
                 android:background="#1E7D7A"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
