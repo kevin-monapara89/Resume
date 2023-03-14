@@ -62,17 +62,18 @@ public class Activity10 extends AppCompatActivity {
         txtphone1.setText(phone);
         txtemail1.setText(email);
         txtcompany1.setText(company);
-        txtexp1.setText(experience);
+        txtexp1.setText("Experience : "+experience);
         txtjoin1.setText(joining);
         txtsch1.setText(school);
-        txtgrade01.setText(grade1);
+        txtgrade01.setText("Grade : "+grade1);
         txtpy1.setText(passing1);
         txtcol1.setText(college);
-        txtdegree1.setText(degree);
+        txtdegree1.setText("Degree : "+degree);
         txtpy2.setText(passing2);
         txtskdetail1.setText(skill);
         txtproname1.setText(project);
         txtdetail1.setText(detail);
+        txtjob1.setText(job);
 
     }
 }
