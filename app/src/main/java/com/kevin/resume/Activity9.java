@@ -15,7 +15,7 @@ public class Activity9 extends AppCompatActivity {
     TextView txtaddress, txtphone, txtemail, txtname, txtjob, txtsch, txtgrade1, txtcol, txtdegree;
     TextView txtcompany, txtexp, txtproject, txtdetail, txtskdetail, txtjoin, txtpy1, txtpy2, txthobby;
     SharedPreferences preferences;
-    SharedPreferences.Editor editor;
+
 
     @SuppressLint({"MissingInflatedId", "SetTextI18n"})
     @Override

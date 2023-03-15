@@ -12,7 +12,7 @@ public class Activity10 extends AppCompatActivity {
     TextView txtsch1, txtgrade01, txtcol1, txtproname1, txtdetail1, txtjob1, txtjoin1, txtpy1, txtpy2, txtdegree1;
 
     SharedPreferences preferences;
-    SharedPreferences.Editor editor;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
